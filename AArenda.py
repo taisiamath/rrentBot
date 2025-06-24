@@ -105,23 +105,13 @@ async def show_photos(message: types.Message):
         # Список URL фотографий из GitHub
          photo_urls = [
             "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.14.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.30.59.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.20.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.28.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.32.jpg?raw=true",
             "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.35.jpg?raw=true",
             "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.39.jpg?raw=true",
             "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.42.jpg?raw=true",
             "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.46.jpg?raw=true",
             "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.49.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.53.jpg?raw=true",
             "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.59.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.32.02.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.32.06.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.32.10.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.32.15.jpg?raw=true",
             "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.32.19.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.32.23.jpg?raw=true",
             "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.32.26.jpg?raw=true",
 
         ]
