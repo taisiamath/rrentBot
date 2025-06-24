@@ -100,29 +100,10 @@ async def cmd_start(message: types.Message):
 
 # ========== ОБРАБОТЧИКИ КНОПОК ==========
 @dp.message(lambda message: message.text == "📷 Фото квартиры")
-async def show_photos(message: types.Message):
-    try:
-        # Список URL фотографий из GitHub
-         photo_urls = [
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.14.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.35.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.39.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.42.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.46.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.49.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.31.59.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.32.19.jpg?raw=true",
-            "https://github.com/taisiamath/rentBot/blob/main/photo/2025-06-24%2014.32.26.jpg?raw=true",
-
-        ]
-
-        # Отправляем все фото подряд без подписей
-        for url in photo_urls:
-            await message.answer_photo(url)
-
-    except Exception as e:
-        logger.error(f"Ошибка при отправке фото: {e}")
-        await message.answer("⚠️ Не удалось загрузить фотографии")
+async def self_booking(message: types.Message):
+    await message.answer(
+        "Для просмотра фотографий перейдите по ссылке:\nhttps://sutochno.ru/front/searchapp/detail/1856903?guests_adults=1&occupied=2025-07-18%3B2025-07-19"
+    )
 
 @dp.message(lambda message: message.text == "📝 Описание квартиры")
 async def show_description(message: types.Message):
